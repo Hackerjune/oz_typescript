@@ -23,12 +23,27 @@
 
 // readonly 프로퍼티 (처음 할당 후 변경 불가능)
 
-let apiConfig: {
-    readonly clientKey: string;
-    readonly url: string;
+// let apiConfig: {
+//     readonly clientKey: string;
+//     readonly url: string;
+// }
+
+// apiConfig = {
+//     clientKey: "asdsd",
+//     url: "sadasdasdas"
+// }
+
+// 타입 별칭 (type alias)
+// class와 유사
+
+type CHAMP = {
+    id: number;
+    name: string;
+    feat: string;
 }
 
-apiConfig = {
-    clientKey: "asdsd",
-    url: "sadasdasdas"
+let Zak: CHAMP = {
+    id: 123,
+    name: "Zak",
+    feat: "zell"
 }
