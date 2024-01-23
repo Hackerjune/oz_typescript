@@ -36,14 +36,42 @@
 // 타입 별칭 (type alias)
 // class와 유사
 
-type CHAMP = {
-    id: number;
-    name: string;
-    feat: string;
-}
+// type CHAMP = {
+//     r: string;
+//     name: string;
+//     feat: string;
+// }
 
-let Zak: CHAMP = {
-    id: 123,
-    name: "Zak",
-    feat: "zell"
-}
+// let Zak: CHAMP = {
+//     r: "bounce",
+//     name: "Zak",
+//     feat: "zell"
+// }
+
+// let Zed: CHAMP = {
+//     r: "shadow",
+//     name: "Zed",
+//     feat: "nin"
+// }
+
+// let champion: CHAMP[];
+
+// champion.push(Zak)
+// champion.push(Zed)
+
+// 중첩객체
+
+// 그냥 타입 별칭이용
+
+
+//////////////////////////////////
+
+// 함수 
+
+//매개변수에 타입 지정
+
+    function add(name: string){
+        return name;
+    }
+
+    add("jun")
