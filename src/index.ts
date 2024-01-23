@@ -80,21 +80,32 @@
 
 //인터페이스 (객체의 구조를 정의 => 확장 및 조합이 용이)
 
-interface Person {
-    readonly name: string;
-    age: number;
-    void(): void;   // 메서드 호출 가능
-}
+// interface Person {
+//     readonly name: string;
+//     age: number;
+//     void(): void;   // 메서드 호출 가능
+// }
 
-interface Student extends Person {
-    studentNumber: number;
-}
+// interface Student extends Person {
+//     studentNumber: number;
+// }
 
-const student: Student = {
-    name: "jun",
-    age: 21,
-    studentNumber: 1,
-    void() {
-        console.log("hello");       
-    },
-}
+// const student: Student = {
+//     name: "jun",
+//     age: 21,
+//     studentNumber: 1,
+//     void() {
+//         console.log("hello");       
+//     },
+// }
+
+//튜플
+
+//고정된 크기의 배열 (정한 타입의 순서대로 요소를 작성해야함)
+
+let myTuple: [string, number, boolean]
+
+myTuple = ["jun", 21, true]; //ok
+
+myTuple = ["jun", "21", false] //error
+
