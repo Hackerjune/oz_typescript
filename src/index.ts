@@ -70,8 +70,27 @@
 
 //매개변수에 타입 지정
 
-    function add(name: string){
-        return name;
-    }
+    // function add(name: string){
+    //     return name;
+    // }
 
-    add("jun")
+    // add("jun")
+
+// 유니언타입
+
+//인터페이스 (객체의 구조를 정의 => 확장 및 조합이 용이)
+
+interface Person {
+    name: string;
+    age: number;
+}
+
+interface Student extends Person {
+    studentNumber: number;
+}
+
+const student: Student = {
+    name: "jun",
+    age: 21,
+    studentNumber: 1
+}
