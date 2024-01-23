@@ -81,8 +81,9 @@
 //인터페이스 (객체의 구조를 정의 => 확장 및 조합이 용이)
 
 interface Person {
-    name: string;
+    readonly name: string;
     age: number;
+    void(): void;   // 메서드 호출 가능
 }
 
 interface Student extends Person {
@@ -92,5 +93,8 @@ interface Student extends Person {
 const student: Student = {
     name: "jun",
     age: 21,
-    studentNumber: 1
+    studentNumber: 1,
+    void() {
+        console.log("hello");       
+    },
 }

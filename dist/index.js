@@ -3,5 +3,8 @@
 const student = {
     name: "jun",
     age: 21,
-    studentNumber: 1
+    studentNumber: 1,
+    void() {
+        console.log("hello");
+    },
 };
