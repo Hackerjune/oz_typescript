@@ -115,9 +115,15 @@
 
 // 타입 추론 -> 명시적인 타입 지정이 없어도 코드 문맥에 따라 타입 추론
 
-function add(x: number, y:number): number{
-    return x + y;
-}
+// function add(x: number, y:number): number{
+//     return x + y;
+// }
 
-const n = add(10,5)
+// const n = add(10,5)
+
+// 타입 단언 as (타입)
+
+const someValue: unknown = "hi"
+
+const len = (someValue as string).length
 

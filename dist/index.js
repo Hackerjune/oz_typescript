@@ -76,7 +76,10 @@
 // enum
 //여러상수를 그룹화하는 것이 목적
 // 타입 추론 -> 명시적인 타입 지정이 없어도 코드 문맥에 따라 타입 추론
-function add(x, y) {
-    return x + y;
-}
-const n = add(10, 5);
+// function add(x: number, y:number): number{
+//     return x + y;
+// }
+// const n = add(10,5)
+// 타입 단언 as (타입)
+const someValue = "hi";
+const len = someValue.length;
