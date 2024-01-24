@@ -81,5 +81,15 @@
 // }
 // const n = add(10,5)
 // 타입 단언 as (타입)
-const someValue = "hi";
-const len = someValue.length;
+// const someValue: unknown = "hi"
+// const len = (someValue as string).length
+// class (기계)
+class CHAMP {
+    constructor(champName, q, w) {
+        this.champName = champName;
+        this.q = q;
+        this.w = w;
+    }
+}
+const Zak = new CHAMP("Zak", "q", "w");
+console.log(Zak);

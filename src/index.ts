@@ -123,7 +123,27 @@
 
 // 타입 단언 as (타입)
 
-const someValue: unknown = "hi"
+// const someValue: unknown = "hi"
 
-const len = (someValue as string).length
+// const len = (someValue as string).length
+
+// class (기계) private,# -> class 내부에서만 할당 
+// protected -> 해당 클래스와 그 서브 클래스 까지 할당
+
+class CHAMP {
+    champName: string;
+    q: string;
+    w: string;
+
+    constructor(champName: string, q: string, w: string){
+        this.champName = champName;
+        this.q = q;
+        this.w = w;
+    }
+}
+
+const Zak = new CHAMP("Zak", "q", "w")
+console.log(Zak);
+
+
 
