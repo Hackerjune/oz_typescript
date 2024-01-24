@@ -70,6 +70,13 @@
 // }
 //튜플
 //고정된 크기의 배열 (정한 타입의 순서대로 요소를 작성해야함)
-let myTuple;
-myTuple = ["jun", 21, true]; //ok
-myTuple = ["jun", "21", false]; //error
+// let myTuple: [string, number, boolean]
+// myTuple = ["jun", 21, true]; //ok
+// myTuple = ["jun", "21", false] //error
+// enum
+//여러상수를 그룹화하는 것이 목적
+// 타입 추론 -> 명시적인 타입 지정이 없어도 코드 문맥에 따라 타입 추론
+function add(x, y) {
+    return x + y;
+}
+const n = add(10, 5);
